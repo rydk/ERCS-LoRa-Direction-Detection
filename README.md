@@ -1,4 +1,3 @@
-````markdown
 # 📡 ERCS-Informed LoRa Signal Modeling for Corner-Aware Human Direction Detection
 
 ![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-blue.svg)
@@ -100,4 +99,3 @@ python nlos_mc.py
 - 📝 **Partial Data:** The released datasets are partial samples from the comprehensive experiments reported in the paper.
 - 🎓 **Academic Use:** This repository is intended for academic research and result verification.
 - ⚙️ **Configuration:** Additional preprocessing or parameter configuration may be required depending on the local runtime environment and hardware.
-````
