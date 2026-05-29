@@ -1,48 +1,57 @@
+````markdown id="n12dsi"
 # ERCS-Informed LoRa Signal Modeling for Corner-Aware Human Direction Detection
 
-This repository provides the partial experimental datasets and simulation codes associated with our study on LoRa-based human direction detection in corner environments.
+This repository provides the simulation codes associated with our study on LoRa-based human direction detection in corner environments.
 
 The released materials are intended to support result reproducibility and facilitate the understanding of the amplitude-based direction sensing mechanism discussed in the paper.
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```text id="d6m0we"
+```text
 .
-├── data
-│   ├── left
-│   │   └── ...
-│   ├── right
-│   │   └── ...
-│
 ├── amp_code.m
 ├── los_mc.py
 ├── nlos_mc.py
 └── README.md
-```
+````
 
 ---
 
-# Dataset Description
+## Experimental Dataset
 
-The `data` directory contains partial experimental datasets collected in corner scenarios.
+Due to the large size of the experimental datasets, the released partial datasets are provided through Baidu Netdisk.
 
-## `data/left`
+### Download Link
 
-Contains LoRa signal data collected when the target was located on the left side of the corner region.
+```text
+https://pan.baidu.com/s/1isxgIG9PxyVDfhq4OY7Qyg
+```
 
-## `data/right`
+### Extraction Code
 
-Contains LoRa signal data collected when the target was located on the right side of the corner region.
+```text
+bhq8
+```
+
+The dataset contains two folders:
+
+```text
+left/
+right/
+```
+
+* `left/` contains LoRa signal data collected when the target was located on the left side of the corner region.
+* `right/` contains LoRa signal data collected when the target was located on the right side of the corner region.
 
 These datasets are used to analyze direction-dependent amplitude variations in LoRa signals.
 
 ---
 
-# MATLAB Signal Processing Code
+## MATLAB Signal Processing Code
 
-## `amp_code.m`
+### `amp_code.m`
 
 This MATLAB script is used to:
 
@@ -52,11 +61,11 @@ This MATLAB script is used to:
 
 The code can be directly applied to the datasets stored in the `left` and `right` folders.
 
-## Usage
+### Usage
 
 Open MATLAB and run:
 
-```matlab id="c62vcr"
+```matlab
 amp_code
 ```
 
@@ -64,9 +73,9 @@ The data path may need to be modified according to the local directory configura
 
 ---
 
-# Monte Carlo Simulation Codes
+## Monte Carlo Simulation Codes
 
-## `los_mc.py`
+### `los_mc.py`
 
 Monte Carlo simulation code for LOS (Line-of-Sight) propagation analysis.
 
@@ -74,13 +83,13 @@ This script is mainly used to study the amplitude formation characteristics unde
 
 Run:
 
-```bash id="2s9ey6"
+```bash
 python los_mc.py
 ```
 
 ---
 
-## `nlos_mc.py`
+### `nlos_mc.py`
 
 Monte Carlo simulation code for NLOS (Non-Line-of-Sight) corner propagation analysis.
 
@@ -88,14 +97,17 @@ This script is used to investigate the influence of reflection and scattering me
 
 Run:
 
-```bash id="v1i1jk"
+```bash
 python nlos_mc.py
 ```
 
 ---
 
-# Notes
+## Notes
 
 * The released datasets are partial samples from the experiments reported in the paper.
 * The repository is intended for academic research and result verification.
 * Additional preprocessing or parameter configuration may be required depending on the local runtime environment.
+
+```
+```
