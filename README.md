@@ -1,113 +1,20 @@
-````markdown id="n12dsi"
-# ERCS-Informed LoRa Signal Modeling for Corner-Aware Human Direction Detection
+# 📡 ERCS-Informed LoRa Signal Modeling for Corner-Aware Human Direction Detection
 
-This repository provides the simulation codes associated with our study on LoRa-based human direction detection in corner environments.
+![MATLAB](https://img.shields.io/badge/MATLAB-R2021a%2B-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-The released materials are intended to support result reproducibility and facilitate the understanding of the amplitude-based direction sensing mechanism discussed in the paper.
+> This repository provides the simulation codes associated with our study on **LoRa-based human direction detection in corner environments**.
+> 
+> The released materials are intended to support result reproducibility and facilitate the understanding of the amplitude-based direction sensing mechanism discussed in our paper.
 
 ---
 
-## Repository Structure
+## 📂 Repository Structure
 
 ```text
 .
-├── amp_code.m
-├── los_mc.py
-├── nlos_mc.py
-└── README.md
-````
-
----
-
-## Experimental Dataset
-
-Due to the large size of the experimental datasets, the released partial datasets are provided through Baidu Netdisk.
-
-### Download Link
-
-```text
-https://pan.baidu.com/s/1isxgIG9PxyVDfhq4OY7Qyg
-```
-
-### Extraction Code
-
-```text
-bhq8
-```
-
-The dataset contains two folders:
-
-```text
-left/
-right/
-```
-
-* `left/` contains LoRa signal data collected when the target was located on the left side of the corner region.
-* `right/` contains LoRa signal data collected when the target was located on the right side of the corner region.
-
-These datasets are used to analyze direction-dependent amplitude variations in LoRa signals.
-
----
-
-## MATLAB Signal Processing Code
-
-### `amp_code.m`
-
-This MATLAB script is used to:
-
-* Read the collected signal data
-* Extract LoRa signal amplitudes
-* Process amplitude sequences for left/right direction analysis
-
-The code can be directly applied to the datasets stored in the `left` and `right` folders.
-
-### Usage
-
-Open MATLAB and run:
-
-```matlab
-amp_code
-```
-
-The data path may need to be modified according to the local directory configuration.
-
----
-
-## Monte Carlo Simulation Codes
-
-### `los_mc.py`
-
-Monte Carlo simulation code for LOS (Line-of-Sight) propagation analysis.
-
-This script is mainly used to study the amplitude formation characteristics under LOS conditions.
-
-Run:
-
-```bash
-python los_mc.py
-```
-
----
-
-### `nlos_mc.py`
-
-Monte Carlo simulation code for NLOS (Non-Line-of-Sight) corner propagation analysis.
-
-This script is used to investigate the influence of reflection and scattering mechanisms on received signal amplitudes in corner environments.
-
-Run:
-
-```bash
-python nlos_mc.py
-```
-
----
-
-## Notes
-
-* The released datasets are partial samples from the experiments reported in the paper.
-* The repository is intended for academic research and result verification.
-* Additional preprocessing or parameter configuration may be required depending on the local runtime environment.
-
-```
-```
+├── amp_code.m      # MATLAB script for amplitude extraction and analysis
+├── los_mc.py       # Monte Carlo simulation for LOS propagation
+├── nlos_mc.py      # Monte Carlo simulation for NLOS corner propagation
+└── README.md       # Project documentation
